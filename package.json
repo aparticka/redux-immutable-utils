@@ -4,16 +4,17 @@
   "description": "Redux Immutable Utility Functions",
   "main": "lib/index.js",
   "scripts": {
-  	"build": "babel src --out-dir lib"
+    "build": "babel src --out-dir lib",
+    "test": "mocha --compilers js:babel/register --recursive"
   },
   "repository": {
-  	"type": "git",
-	"url": "https://github.com/aparticka/redux-immutable-utils"
+    "type": "git",
+    "url": "https://github.com/aparticka/redux-immutable-utils"
   },
   "keywords": [
-  	"redux",
-	"immutable",
-	"combineReducers"
+    "redux",
+    "immutable",
+    "combineReducers"
   ],
   "author": "Adam Particka <a.particka@gmail.com>",
   "license": "ISC",
@@ -22,6 +23,8 @@
   },
   "devDependencies": {
     "babel": "^5.8.23",
-    "babel-core": "^5.8.25"
+    "babel-core": "^5.8.25",
+    "expect.js": "^0.3.1",
+    "mocha": "^2.3.3"
   }
 }
